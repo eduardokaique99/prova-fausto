@@ -1,0 +1,8 @@
+body .botao__primary {
+    background-color: red;
+  }
+  body .botao__primary--active {
+    background-color: blue;
+  }
+  
+  /*# sourceMappingURL=main.css.map */

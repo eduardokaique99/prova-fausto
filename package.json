@@ -1,0 +1,28 @@
+{
+    "name": "2023-ads4f-revisaophp",
+    "version": "1.0.0",
+    "description": "Revisao das aulas de PHP e desenvolvimento web",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "sass": "sass --watch ./src/scss/main.scss:./assets/css/main.css"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/faustort/2023-ADS4f-RevisaoPhp.git"
+    },
+    "keywords": [
+      "aula",
+      "teste",
+      "avaliacao"
+    ],
+    "author": "Fausto Toloi",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/faustort/2023-ADS4f-RevisaoPhp/issues"
+    },
+    "homepage": "https://github.com/faustort/2023-ADS4f-RevisaoPhp#readme",
+    "dependencies": {
+      "sass": "^1.69.5"
+    }
+  }
