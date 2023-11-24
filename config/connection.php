@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $user = "senac";
 $password = "senac";
-$database = "aularevisao";
+$database = "aeo";
 
 $chave = "zXW3x14WYB"; // SELECT MD5 (CONCAT ('SENHADOUSUARIO', 'zXW3x14WYB')) AS md5_string;
 

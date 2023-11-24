@@ -17,13 +17,12 @@ include __DIR__ . "/header.php";
             <div class="col-md-6 d-flex flex-column justify-content-center">
                 <h2 class="mb-3">Conheça nossa Hitória</h2>
 
-                <p>Olhe, meu amigo, se organize. Estão tentando reduzir a experiência da mulher fenotipicamente negra a
-                    um ato pra diminutizar as lamúrias da homoafetividade fingindo não entender o contexto
-                    sócio-cultural. Resolva seu B.O, você errou grandão. Estão tentando reduzir a experiência da mulher
-                    fenotipicamente negra a um ato pra potencializar o silenciamento dos indivíduos silenciados por seus
-                    lugares de dores para proveito próprio. Pegue a visão, falador passa mal, rapaz. Estão tentando
-                    reduzir a experiência da mulher fenotipicamente negra a um ato pra deslegitimar a relativização da
-                    luta anti-colonialista cujos fenótipos nunca serão sobrepujados em detrimento dos negros. </p>
+                <p>Desde o princípio, a Educação Progressiva destacou-se por sua abordagem progressista e centrada no aluno. Clara e Ricardo acreditavam que a educação não deveria ser uma mera transmissão de conhecimento, mas um processo dinâmico de descoberta e crescimento.</p>
+                <p>Os primeiros anos foram desafiadores, mas a escola ganhou reconhecimento pela sua metodologia inovadora, que incorporava aprendizado prático, projetos interdisciplinares e estímulo à criatividade. A comunidade rapidamente abraçou a proposta educacional única, e a Educação Progressiva cresceu exponencialmente.</p>
+                <p>Com o tempo, a escola expandiu suas instalações para incluir laboratórios de ciências, estúdios de arte e espaços ao ar livre. A introdução de tecnologias educacionais avançadas complementou o currículo, preparando os alunos para um mundo digital em constante evolução.</p>
+                <p>Um marco crucial na história da Educação Progressiva foi a parceria com especialistas em psicologia e pedagogia, resultando na implementação de programas de apoio emocional e social. A escola tornou-se um ambiente que valorizava não apenas o conhecimento acadêmico, mas também o desenvolvimento integral dos alunos.</p>
+                <p>Hoje, a Educação Progressiva é reconhecida por suas práticas educacionais inovadoras e por produzir alunos criativos, críticos e preparados para os desafios da vida. O compromisso contínuo com a excelência educacional e a visão de Clara e Ricardo moldaram uma instituição que vai além dos limites tradicionais da educação.</p>
+                <p>A história da Escola Educação Progressiva é um testemunho do poder transformador da educação quando guiada pela paixão, visão e um compromisso inabalável com o potencial único de cada aluno.</p>                
             </div>
             <div class="col-md-6">
                 <img src="https://picsum.photos/600/500" class="img-fluid" alt="">

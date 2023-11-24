@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <a class="navbar-brand" href="#">Revisão PHP</a>
+            <a class="navbar-brand" href="#">ESCOLA EDUCAÇÃO PROGRESSIVA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menusite"
                 aria-controls="menusite" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -15,7 +15,13 @@
                         <a class="nav-link" href="sobre.php">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="noticias.php">Notícias</a>
+                        <a class="nav-link" href="disciplina.php">Disciplinas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="professor.php">Professores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aluno.php">Alunos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contato.php">Contato</a>

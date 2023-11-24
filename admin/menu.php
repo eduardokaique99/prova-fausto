@@ -16,8 +16,14 @@
         <div id="sidebar" class="border rounded">
             <div class="nav flex-column py-3">
                 <h4>Notícias</h4>
-                <a href="add_noticia.php" class="list-inline-item">Inserir Notícia</a>
-                <a href="list_noticia.php" class="list-inline-item">Listar Notícias</a>
+                <a href="add_aluno.php" class="list-inline-item">Inserir Alunos</a>
+                <a href="list_aluno.php" class="list-inline-item">Listar Alunos</a>
+                <a href="add_disciplina.php" class="list-inline-item">Inserir Disciplinas</a>
+                <a href="list_disciplina.php" class="list-inline-item">Listar Disciplinas</a>
+                <a href="add_professor.php" class="list-inline-item">Inserir Professors</a>
+                <a href="list_professor.php" class="list-inline-item">Listar Professores</a>
+                <a href="add_usuario.php" class="list-inline-item">Inserir Usuarios</a>
+                <a href="list_usuario.php" class="list-inline-item">Listar Usuarios</a>
             </div>
         </div>
     </div>

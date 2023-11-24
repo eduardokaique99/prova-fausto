@@ -17,13 +17,12 @@ if (isset($_POST['form_titulo']) && isset($_POST['form_texto'])) {
 
     // Gabarito da tabela (id, titulo, data, conteudo)
     // cria a query de inserção no banco de dados
-    $sql = "INSERT INTO alunos (titulo, data, conteudo) VALUES (:titulo, :data, :conteudo)";
+    $sql = "INSERT INTO alunos (idAluno, nome) VALUES (:idALuno, :nome)";
     // prepara a query para ser executada
     $pdo = $pdo->prepare($sql);
     // substitui os parâmetros da query
-    $pdo->bindParam(":titulo", $titulo);
-    $pdo->bindParam(":data", $data_hoje);
-    $pdo->bindParam(":conteudo", $texto);
+    $pdo->bindParam(":idAluno", $idAluno);
+    $pdo->bindParam(":nome", $nome);
     // executa a query
     $pdo->execute();
     // verifica se a query foi executada com sucesso
@@ -43,18 +42,17 @@ include_once __DIR__ . "/header_dash.php";
         <div class="row">
             <div class="col-md-6">
                 <h3>Adicionar Aluno</h3>
-                <p>A página de adicionar notícia é uma ferramenta que permite aos usuários criar e publicar notícias em um site. Nesta página, o usuário pode inserir o título, o conteúdo da notícia. O usuário também pode visualizar a notícia antes de publicá-la ou salvá-la como rascunho. A página de adicionar notícia facilita a comunicação e a divulgação de informações relevantes para o público-alvo do site.</p>
+                <p>A página de adicionar aluno é uma ferramenta que permite aos usuários criar ealunos em um site. Nesta página, o usuário pode inserir o id e o nome do aluno. </p>
                 <?php
-                // exibe a mensagem de sucesso ou erro usando o operador ternário
                 echo (isset($mensagem)) ? "<p class='alert alert-secondary'>$mensagem</p>" : "";
                 ?>
             </div>
             <div class="col-md-6">
                 <form action="" method="post" enctype="multipart/form-data">
                     <div>
-                        <label for="titulo" class="form-label w-100">
+                        <label for="idAluno" class="form-label w-100">
                             <!-- inclui o input de título -->
-                            <input class="form-control" type="text" name="form_titulo" placeholder="Título da notícia" id="titulo">
+                            <input class="form-control" type="text" name="form_titulo" placeholder="ID do aluno" id="idAluno">
                         </label>
                     </div>
                     <div>
