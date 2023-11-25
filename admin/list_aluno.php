@@ -28,11 +28,11 @@ include_once __DIR__ . "/../config/connection.php";
         </div>
         <div class="col-md-6">
 
-            <ul class="list-group list-group-numbered">
+            <ul class="list-group">
                 <!-- Começo a listagem -->
                 <?php
                 // cria a query de consulta ao banco de dados
-                $sql = "SELECT * FROM noticias";
+                $sql = "SELECT * FROM alunos";
                 // executa a consulta e armazena o resultado em 
                 $resultado = $pdo->query($sql);
                 // verifica se houve resultados
@@ -49,17 +49,18 @@ include_once __DIR__ . "/../config/connection.php";
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <!-- Título do item -->
                             <div class="ms-2 me-auto">
-                                <?php echo $aluno['titulo']; ?>
+                                <?php echo $aluno['idAluno']; ?>
+                                <?php echo $aluno['nome']; ?>
                             </div>
                             <!-- sistema de botões -->
                             <ul class="list-inline m-0">
                                 <!-- Editar -->
                                 <li class="list-inline-item">
-                                    <a href="edit_noticia.php?idNot=<?php echo $aluno['id']; ?>" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="bi bi-pencil"></i></a>
+                                    <a href="edit_aluno.php?idAluno=<?php echo $aluno['idAluno']; ?>" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="bi bi-pencil"></i></a>
                                 </li>
                                 <!-- Excluir -->
                                 <li class="list-inline-item">
-                                    <a href="delete_noticia.php?idNot=<?php echo $aluno['id']; ?>" class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="bi bi-trash"></i></a>
+                                    <a href="delete_aluno.php?idAluno=<?php echo $aluno['idAluno']; ?>" class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="bi bi-trash"></i></a>
                                 </li>
                             </ul>
                         </li>

@@ -20,7 +20,7 @@ include_once __DIR__ . "/../config/connection.php";
     <div class="row">
         <div class="col-md-6">
             <h3>Listar professores</h3>
-            <p>Explicação sobre a listagem de notícias</p>
+            <p>Explicação sobre a listagem de professores</p>
             <?php
             // condicional ternário
             echo (isset($mensagem)) ? "<p class='alert alert-secondary'>$mensagem</p>" : "";
@@ -28,7 +28,7 @@ include_once __DIR__ . "/../config/connection.php";
         </div>
         <div class="col-md-6">
 
-            <ul class="list-group list-group-numbered">
+            <ul class="list-group">
                 <!-- Começo a listagem -->
                 <?php
                 // cria a query de consulta ao banco de dados
@@ -49,17 +49,18 @@ include_once __DIR__ . "/../config/connection.php";
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <!-- Título do item -->
                             <div class="ms-2 me-auto">
-                                <?php echo $professor['titulo']; ?>
+                                <?php echo $professor['idProf']; ?>
+                                <?php echo $professor['nome']; ?>
                             </div>
                             <!-- sistema de botões -->
                             <ul class="list-inline m-0">
                                 <!-- Editar -->
                                 <li class="list-inline-item">
-                                    <a href="edit_noticia.php?idNot=<?php echo $professor['id']; ?>" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="bi bi-pencil"></i></a>
+                                    <a href="edit_professor.php?idProf=<?php echo $professor['idProf']; ?>" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="bi bi-pencil"></i></a>
                                 </li>
                                 <!-- Excluir -->
                                 <li class="list-inline-item">
-                                    <a href="delete_noticia.php?idNot=<?php echo $professor['id']; ?>" class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="bi bi-trash"></i></a>
+                                    <a href="delete_professor.php?idProf=<?php echo $professor['idProf']; ?>" class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="bi bi-trash"></i></a>
                                 </li>
                             </ul>
                         </li>

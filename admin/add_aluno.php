@@ -5,19 +5,19 @@
 (!isset($_SESSION['usuario'])) ? (header("Location: index.php") && exit())  : "";
 
 // verifica se os campos foram preenchidos e se o formulário foi enviado
-if (isset($_POST['form_titulo']) && isset($_POST['form_texto'])) {
+if (isset($_POST['form_idAluno']) && isset($_POST['form_nome'])) {
 
     // inclui o arquivo de conexão com o banco de dados
     include_once __DIR__ . "/../config/connection.php";
 
     // recebe os valores do formulário em variáveis locais
-    $titulo = $_POST['form_titulo'];
-    $texto = $_POST['form_texto'];
-    $data_hoje = date("Y-m-d H:i:s");
+    $idAluno = $_POST['form_idAluno'];
+    $nome = $_POST['form_nome'];
+
 
     // Gabarito da tabela (id, titulo, data, conteudo)
     // cria a query de inserção no banco de dados
-    $sql = "INSERT INTO alunos (idAluno, nome) VALUES (:idALuno, :nome)";
+    $sql = "INSERT INTO alunos (idAluno, nome) VALUES (:idAluno, :nome)";
     // prepara a query para ser executada
     $pdo = $pdo->prepare($sql);
     // substitui os parâmetros da query
@@ -56,9 +56,9 @@ include_once __DIR__ . "/header_dash.php";
                         </label>
                     </div>
                     <div>
-                        <label for="texto" class="form-label w-100">
+                        <label for="nome" class="form-label w-100">
                             <!-- inclui o textarea de texto -->
-                            <textarea class="form-control" name="form_texto" id="texto" cols="30" rows="10" placeholder="Texto da notícia"></textarea>
+                            <input class="form-control" type="text" name="form_nome" placeholder="Nome do aluno" id="nome">
                         </label>
                     </div>
                     <!-- inclui o botão de enviar -->

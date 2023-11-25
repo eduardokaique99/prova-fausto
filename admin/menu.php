@@ -20,7 +20,7 @@
                 <a href="list_aluno.php" class="list-inline-item">Listar Alunos</a>
                 <a href="add_disciplina.php" class="list-inline-item">Inserir Disciplinas</a>
                 <a href="list_disciplina.php" class="list-inline-item">Listar Disciplinas</a>
-                <a href="add_professor.php" class="list-inline-item">Inserir Professors</a>
+                <a href="add_professor.php" class="list-inline-item">Inserir Professores</a>
                 <a href="list_professor.php" class="list-inline-item">Listar Professores</a>
                 <a href="add_usuario.php" class="list-inline-item">Inserir Usuarios</a>
                 <a href="list_usuario.php" class="list-inline-item">Listar Usuarios</a>

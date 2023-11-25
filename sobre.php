@@ -25,8 +25,7 @@ include __DIR__ . "/header.php";
                 <p>A história da Escola Educação Progressiva é um testemunho do poder transformador da educação quando guiada pela paixão, visão e um compromisso inabalável com o potencial único de cada aluno.</p>                
             </div>
             <div class="col-md-6">
-                <img src="https://picsum.photos/600/500" class="img-fluid" alt="">
-
+                <img class="d-block w-100" src="assets/images/escola.jpeg" alt="Escola">
             </div>
         </div>
     </div>
